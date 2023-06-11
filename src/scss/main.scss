@@ -1,19 +1,39 @@
-@import "mixins";
-@import "fonts";
-@import "vendor";
-@import "vars";
-@import "settings";
-@import "src/scss/style.css";
-
-
-.header {
-  text-align: center;
-  & img {
-    width: 30%;
+body{
+  font-family: "TTLakes", sans-serif;
+    padding:0;
+    margin:0;
+    @media (min-width: $screen-lg){
+      display: flex;
+      min-width: $screen-lg;
+    }
+    @media (min-width: $screen-md){
+    min-width: $screen-md;
+    }
+    @media (min-width: 1560px){
+    display: flex;
+    justify-content: center;
   }
 }
 
-.welcome-title {
-  margin-top: 50px;
-  font-size: 6em;
+@media (min-width: 768px){
+
+    .content__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+    .text-2 {
+        display: block;
+    }
+    .content-img{
+        max-height: 260px ;
+        margin-right: 25px;
+        margin-left: 38px;
+
+    }
+    .content-img img{
+        width: 100%;
+
+    }
 }

@@ -1,0 +1,128 @@
+.view-tech-menu__container {
+
+}
+
+.view-tech-menu__title {
+  position: relative;
+  height: 80px;
+  margin: 16px 0 0 0;
+  padding: 0 0 0 20px;
+  background: linear-gradient(90deg, rgb(248, 248, 248) , rgb(255, 255, 255));
+  color:$color-active;
+  border-top: 1px solid $color-second;
+
+  @media (min-width: $screen-md) {
+    min-width: 700px;
+    height: 56px;
+  }
+  @media (min-width: $screen-lg) {
+    //min-width: 1470px;
+    height: 56px;
+  }
+
+  p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.view-tech-menu__cases{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 16px 32px 0 16px;
+  list-style: none;
+
+  @media (min-width: $screen-md) {
+    padding-top: 24px;
+  }
+
+}
+
+.view-tech__flex {
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media (min-width: $screen-lg) {
+    flex-wrap: nowrap;
+  }
+}
+
+.view-tech__case-1, .view-tech__case-2, .view-tech__case-3,
+.view-tech__case-4 {
+  width: 240px;
+  height: 160px;
+  margin: 0 0 24px 0;
+
+  @media (min-width: $screen-md) {
+    height: 72px;
+    margin: 0 0 124px 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-right: 32px;
+  }
+
+  .view-tech__elem {
+    width: 240px;
+    background: $color-blocks;
+    height: 160px;
+    border: 2px solid $color-area-text;
+    border-radius: 5%;
+    margin: 0 10px 0 0;
+  }
+
+  p {
+    position: absolute;
+    left: 15px;
+  }
+
+  img {
+    position: absolute;
+    top: 110px;
+    left: 174px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.view-tech__case-4{
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: block;
+  }
+}
+
+.view-tech-menu__show-all{
+  display: none;
+  margin: 0 0 0 32px;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  p {
+    margin: 0 0 0 8px;
+  }
+}

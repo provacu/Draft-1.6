@@ -1,0 +1,108 @@
+.brands-menu__container {
+
+}
+
+.brands-menu__title {
+  position: relative;
+  height: 80px;
+  margin: 16px 0 0 0;
+  padding: 0 0 0 20px;
+  background: linear-gradient(90deg, rgb(248, 248, 248) , rgb(255, 255, 255));
+  color:$color-active;
+  border-top: 1px solid $color-second;
+  @media (min-width: $screen-md) {
+    min-width: 700px;
+    height: 56px;
+  }
+  @media (min-width: $screen-lg) {
+    //min-width: 1470px;
+    height: 56px;
+  }
+
+  p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.brands-menu__brands{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 0 0;
+  padding: 16px 0 0 16px;
+  list-style: none;
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    padding-top: 24px;
+    max-width: 900px;
+  }
+  @media (min-width: $screen-lg) {
+    max-width: 1200px;
+  }
+}
+
+.brand-1, .brand-2, .brand-3,
+.brand-4, .brand-5, .brand-6,
+.brand-7, .brand-8, .brand-9,
+.brand-10, .brand-11 {
+  border: 0 solid $color-area-text;
+  border-radius: 5%;
+  margin: 0 0 20px 0;
+  width: 240px;
+
+  @media (min-width: $screen-md) {
+    height: 72px;
+    background: $color-background;
+    margin-right: 24px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-right: 32px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.brand-4, .brand-8,
+.brand-9, .brand-10, .brand-11{
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.brand-4, .brand-8{
+  @media (min-width: $screen-lg) {
+    display:inline;
+  }
+}
+
+.brand-9, .brand-10, .brand-11 {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.brands-menu__show-all{
+  display: none;
+  margin: 0 0 0 32px;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  p {
+    margin: 0 0 0 8px;
+  }
+}

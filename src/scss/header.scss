@@ -1,0 +1,139 @@
+.header{
+  @media (min-width: $screen-sm){
+    width: 320px;
+  }
+}
+.header__inner {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-top: 10px;
+  @media (min-width: $screen-lg){
+    background-color: $color-background;
+  }
+  p {
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.header__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  @media (min-width: $screen-lg){
+    top: 25px;
+    position: absolute;
+    padding: 10px;
+  }
+  @media (min-width: $screen-sm){
+    padding-top: 25px;
+  }
+}
+
+.header__first_points, .header__second-points {
+  display: flex;
+  align-items: center;
+}
+.header__first_points{
+  @media (min-width: $screen-lg){
+    display:none;
+  }
+}
+.header__second-points {
+
+  overflow: scroll;
+  width: 120px;
+  padding: 15px 0 0 0;
+  @media (min-width: $screen-md){
+      overflow: auto;
+      width: 100%;
+      justify-content: flex-end;
+    }
+}
+
+.header__first_points .header__divider {
+  display: block;
+  order: 1;
+}
+
+.header__elem1, .header__elem2, .header__elem3,
+.header__elem4, .header__elem5, .header__elem7,
+.header__elem8, .header__divider{
+  margin: 0 8px 0 8px;
+  cursor: pointer;
+  @media (min-width:$screen-lg){
+    display:none;
+  }
+}
+.header__elem1 {
+  @media (min-width: $screen-md) {
+    order: 1;
+  }
+}
+.header__elem2 {
+  @media (min-width: $screen-md) {
+    order: 2;
+  }
+}
+
+.header__elem3 {
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-left: 16px;
+  }
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+.header__elem4 {
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-left: 16px;
+  }
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+.header__elem5 {
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-left: 16px;
+  }
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+.header__elem7,
+.header__elem8 {
+  @media (min-width: $screen-lg) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 32px;
+  }
+}
+.header__inner p {
+  @media (min-width:$screen-lg) {
+    display: block;
+    letter-spacing: -0.2px;
+    padding-right: 8px;
+  }
+}
+
+.header__nleft {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  @media (min-width: $screen-lg){
+    position: absolute;
+    left: 0;
+  }
+}
