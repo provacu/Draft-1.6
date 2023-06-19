@@ -1,5 +1,5 @@
 .view-tech-menu__container {
-
+  position: relative;
 }
 
 .view-tech-menu__title {
@@ -43,12 +43,20 @@
 
 }
 
+.view-tech-menu__cases::after {
+  @media (min-width: $screen-md) {
+  content: "";
+  flex-grow: 1;
+  min-width: 240px;
+  }
+}
+
 .view-tech__flex {
   @media (min-width: $screen-md) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
   @media (min-width: $screen-lg) {
     flex-wrap: nowrap;
@@ -61,6 +69,7 @@
   height: 160px;
   margin: 0 0 24px 0;
 
+
   @media (min-width: $screen-md) {
     height: 72px;
     margin: 0 0 124px 0;
@@ -70,14 +79,20 @@
     margin-right: 32px;
   }
 
+
+
   .view-tech__elem {
     width: 240px;
     background: $color-blocks;
     height: 160px;
     border: 2px solid $color-area-text;
     border-radius: 5%;
-    margin: 0 10px 0 0;
+    margin: 0 8px 0 5px;
+    @media (min-width: $screen-md) {
+      width: 224px;
+    }
   }
+
 
   p {
     position: absolute;
@@ -113,6 +128,7 @@
   margin: 0 0 0 32px;
 
   @media (min-width: $screen-md) {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -124,5 +140,58 @@
 
   p {
     margin: 0 0 0 8px;
+  }
+}
+
+
+.view-tech-menu__show-all::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -3px;
+  width: 5px;
+  height: 5px;
+  border: solid #41F6D7;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 0.1px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.view-tech-menu__show-all::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -3px;
+  width: 5px;
+  height: 5px;
+  border: solid #41F6D7;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 0.1px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.view-tech-menu__show-all--rotated::before,
+.view-tech-menu__show-all--rotated::after {
+  transform: rotate(-135deg);
+}
+
+.view-tech__fader {
+  width: 24px;
+  height: 166px;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  position: absolute;
+  right: 0;
+  top: 15px;
+  z-index: 1000;
+  opacity: 0.7;
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+  @media (min-width: $screen-lg) {
+    display: none;
   }
 }

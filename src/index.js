@@ -29,10 +29,6 @@ import "./img/circle-icons/search.svg";
 import "./img/circle-icons/checkstatus.svg";
 
 // Img helpers
-import "./img/helpers/divider.svg";
-import "./img/helpers/highlight.svg";
-import "./img/helpers/arrow-down.svg";
-import "./img/helpers/arrow-up.svg";
 import "./img/helpers/more.svg";
 import "./img/helpers/go.svg";
 import "./img/helpers/button.svg";

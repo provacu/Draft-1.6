@@ -10,7 +10,8 @@ let mySwiper3;
 function mobileSliderBrands() {
   if (window.innerWidth < 768 && sliderBrands.dataset.mobile === "false"){
     mySwiper1 = new Swiper(sliderBrands, {
-      slidesPerView:1,
+      slidesPerView: 'auto',
+      spaceBetween: 16,
       loop: true,
       slideClass: "swiper-slide",
       modules: [Pagination],
@@ -33,7 +34,8 @@ function mobileSliderBrands() {
 function mobileSliderViewTech() {
   if (window.innerWidth < 768 && sliderViewTech.dataset.mobile === "false"){
     mySwiper2 = new Swiper(sliderViewTech, {
-      slidesPerView:1,
+      slidesPerView: 'auto',
+      spaceBetween: 16,
       loop: true,
       slideClass: "swiper-slide",
       modules: [Pagination],
@@ -56,7 +58,8 @@ function mobileSliderViewTech() {
 function mobileSliderPrice() {
   if (window.innerWidth < 768 && sliderPrice.dataset.mobile === "false"){
     mySwiper3 = new Swiper(sliderPrice, {
-      slidesPerView:1,
+      slidesPerView: 'auto',
+      spaceBetween: 8,
       loop: true,
       slideClass: "swiper-slide",
       modules: [Pagination],
